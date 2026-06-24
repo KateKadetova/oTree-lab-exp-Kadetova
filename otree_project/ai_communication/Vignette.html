@@ -1,0 +1,38 @@
+{{ block title }}
+Ситуация и сообщение
+{{ endblock }}
+
+{{ block content }}
+
+<h4>Ситуация</h4>
+
+<p>
+    {{ scenario_text }}
+</p>
+
+<h4>Как было создано сообщение</h4>
+
+<p>
+    <b>{{ condition_label }}</b>
+</p>
+
+<p>
+    {{ condition_text }}
+</p>
+
+<h4>Сообщение от друга</h4>
+
+<div style="border: 1px solid #cccccc; padding: 15px; margin: 15px 0; background-color: #f8f8f8;">
+    <p>
+        {{ support_message }}
+    </p>
+</div>
+
+<p>
+    Пожалуйста, внимательно прочитайте сообщение. На следующих страницах вам нужно будет оценить,
+    как вы воспринимаете это сообщение и отправителя.
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

@@ -32,6 +32,12 @@ SESSION_CONFIGS = [
         app_sequence=['prisoner_3players', 'payment_info'],
         num_demo_participants=3,
     ),
+    dict(
+        name='ai_communication',
+        display_name='AI Communication Experiment',
+        app_sequence=['ai_communication'],
+        num_demo_participants=1,
+    ),
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
