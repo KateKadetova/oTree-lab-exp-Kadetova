@@ -1,0 +1,25 @@
+{{ block title }}
+Round Results
+{{ endblock }}
+
+{{ block content }}
+
+<p><b>Your role:</b> {{ role }}</p>
+
+<p>Player 1 chose: <b>{{ p1_decision }}</b></p>
+<p>Player 2 chose: <b>{{ p2_decision }}</b></p>
+
+<p>Player 3 assigned {{ punish_p1 }} punishment points to Player 1.</p>
+<p>Player 3 assigned {{ punish_p2 }} punishment points to Player 2.</p>
+
+<p>Your payoff before punishment was: <b>{{ base_payoff }}</b></p>
+<p>Your payoff in this round is: <b>{{ round_payoff }}</b></p>
+
+<p>
+    This round payoff will count only if this round is randomly selected
+    for final payment.
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

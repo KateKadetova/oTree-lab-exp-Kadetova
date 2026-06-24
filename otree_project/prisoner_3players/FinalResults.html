@@ -1,0 +1,21 @@
+{{ block title }}
+Final Results
+{{ endblock }}
+
+{{ block content }}
+
+<p>The randomly selected round for your final payment is:</p>
+
+<h3>Round {{ selected_round }}</h3>
+
+<p>Your payoff in the selected round was:</p>
+
+<h3>{{ selected_round_payoff }}</h3>
+
+<p>Your final payoff is:</p>
+
+<h3>{{ final_payoff }}</h3>
+
+{{ next_button }}
+
+{{ endblock }}

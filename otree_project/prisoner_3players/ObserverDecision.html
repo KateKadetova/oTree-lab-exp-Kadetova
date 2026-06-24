@@ -1,0 +1,24 @@
+{{ block title }}
+Observer Decision
+{{ endblock }}
+
+{{ block content }}
+
+<p>You are Player 3, the observer.</p>
+
+<p>Player 1 chose: <b>{{ p1_decision }}</b></p>
+<p>Player 2 chose: <b>{{ p2_decision }}</b></p>
+
+<p>You have {{ observer_endowment }}.</p>
+
+<p>
+    You can assign up to {{ max_punishment }} punishment points to each player.
+    Each punishment point costs you 1 point and reduces the target player's payoff
+    by {{ punishment_multiplier }} points.
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}
